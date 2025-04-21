@@ -1,0 +1,67 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #0f0f3e, #1f1f7a);
+  color: #fff;
+  overflow-x: hidden;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: rgba(0, 0, 50, 0.6);
+}
+
+.search-container {
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+}
+
+#promptInput {
+  padding: 10px;
+  width: 60%;
+  border: none;
+  border-radius: 8px;
+}
+
+button {
+  margin-left: 10px;
+  padding: 10px 20px;
+  background: #00f2ff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  color: #000;
+}
+
+.scroll-books {
+  display: flex;
+  overflow-x: auto;
+  white-space: nowrap;
+  animation: scroll 20s linear infinite;
+  padding: 20px;
+}
+
+@keyframes scroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+.book-card {
+  background: rgba(255, 255, 255, 0.1);
+  margin-right: 15px;
+  padding: 10px;
+  border-radius: 10px;
+  width: 200px;
+  flex-shrink: 0;
+}
+
+.hidden {
+  display: none;
+}
+
+.results {
+  padding: 20px;
+}

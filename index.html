@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>DreamBook</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="header">
+    <h1>DreamBook</h1>
+    <button id="adminBtn">Admin</button>
+  </div>
+  <div class="search-container">
+    <input type="text" id="promptInput" placeholder="What would you like to read?..." />
+    <button onclick="searchBooks()">Search</button>
+  </div>
+  <div class="scroll-books" id="scrollBooks"></div>
+  <div class="results" id="results"></div>
+
+  <div id="adminPanel" class="hidden">
+    <h2>Admin Panel</h2>
+    <input type="file" id="bookFile" accept=".json" />
+    <button onclick="uploadBooks()">Upload Books</button>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
